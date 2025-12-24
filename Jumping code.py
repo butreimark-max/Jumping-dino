@@ -22,7 +22,7 @@ class Cactus(arcade.Sprite):
     def movement(self):
         self.center_x += self.change_x
         self.center_y += self.change_y
-        self.change_x = -4
+        self.change_x = -5
         if self.right <= 0:
             self.left = 1200
             self.point_counter=True
@@ -39,7 +39,7 @@ class MyGame(arcade.Window):
         super().__init__(width, height, title)
         """Game over """
         self.game_status=True
-        self.game_over_picture=arcade.load_texture( "istockphoto-1325433246-640x640.jpg")
+        self.game_over_picture=arcade.load_texture( "pixil-frame-0 (10).png")
 
 
 
