@@ -39,7 +39,7 @@ class Cactus(arcade.Sprite):
         self.center_x += self.change_x
         self.center_y += self.change_y
         self.change_x = -5
-        self.center_y = height / 1.8
+        self.center_y = height / 1.5
         if self.right <= 0:
             self.left = width
             self.point_counter=True
@@ -81,7 +81,7 @@ class MyGame(arcade.Window):
         self.dino_jumping.center_x = self.width/2
         self.dino_jumping.center_y = self.height/2
         """ Cactus """
-        self.Spiky_Cactus = Cactus("pixil-frame-0 (8).png", scale=3*1.6)
+        self.Spiky_Cactus = Cactus("pixil-frame-0 (8).png", scale=2*1.6)
         self.Spiky_Cactus.center_x = self.width / 1.1
         self.Spiky_Cactus.center_y = self.height / 1.6
         """ game reset"""
